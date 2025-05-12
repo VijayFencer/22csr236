@@ -1,0 +1,13 @@
+type: environment.insomnia.rest/5.0
+name: frontend
+meta:
+  id: wrk_b781ed1556ba4ff39451515871fdc004
+  created: 1747026471650
+  modified: 1747026471650
+environments:
+  name: Base Environment
+  meta:
+    id: env_fbc986418698229f7483532d4703fa790d06f9d2
+    created: 1747026471652
+    modified: 1747026483268
+    isPrivate: false

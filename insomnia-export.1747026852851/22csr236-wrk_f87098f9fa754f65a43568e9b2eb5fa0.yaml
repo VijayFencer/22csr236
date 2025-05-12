@@ -1,0 +1,87 @@
+type: collection.insomnia.rest/5.0
+name: 22csr236
+meta:
+  id: wrk_f87098f9fa754f65a43568e9b2eb5fa0
+  created: 1747025209420
+  modified: 1747025834802
+collection:
+  - url: http://20.244.56.144/evaluation-service/register
+    name: My first request
+    meta:
+      id: req_ab7b5ed7c41f431a906d467d32921827
+      created: 1747025209475
+      modified: 1747025977716
+      isPrivate: false
+      sortKey: -1747025209475
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "email": "vijaybharathv.22cse@kongu.edu",
+            "name": "Vijay Bharath V",
+            "mobileNo":"6381028987",
+            "githubUsername": "VijayFencer",
+            "rollNo": "22CSR236",
+            "collegeName":"Kongu Engineering College",
+            "accessCode": "jmpZaF"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://20.244.56.144/evaluation-service/auth
+    name: New Request
+    meta:
+      id: req_3c93cc44fedd4d2d83fe6c7e69686ba4
+      created: 1747025406448
+      modified: 1747026186168
+      isPrivate: false
+      sortKey: -1747025406448
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"email": "vijaybharathv.22cse@kongu.edu",
+        	"name": "vijay bharath v",
+        	"rollNo": "22csr236",
+        	"accessCode": "jmpZaF",
+        	"clientID": "aa883e1f-8e6b-4a39-b57f-13936abb4cfa",
+        	"clientSecret": "NdYVuwxKMbjUyaAU"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.1.0
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c60248b98449e5c56dfa77afba7cc460c72cb1cc
+    created: 1747025209423
+    modified: 1747025209423
+environments:
+  name: Base Environment
+  meta:
+    id: env_c60248b98449e5c56dfa77afba7cc460c72cb1cc
+    created: 1747025209422
+    modified: 1747025209422
+    isPrivate: false
